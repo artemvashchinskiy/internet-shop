@@ -1,0 +1,32 @@
+.header {
+    background: #020202;
+    min-height: 50px; 
+    padding: 15px;  
+    &__container {
+        @include flex(space-between, center, row);
+        flex-wrap: wrap;        
+    }
+    &__time {
+        @include flex(center, center, row);
+        h4 {color: #ACACAC;}
+        margin-right: 20px;
+        img {
+            height: auto;
+            margin-left: 10px;
+        }
+    }
+    .header__contacts {
+        @include flex(center, center, row);
+        h4 {color: #ACACAC;}        
+        a {
+            color: #FFFFFF;
+            margin-left: 10px;
+            margin-right: 20px;
+        }    
+    }    
+    &__call-us {
+        @include flex(center, center, row);
+        h4 {color: #ACACAC;}
+        img {margin-left: 10px;}
+    }
+}

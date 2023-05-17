@@ -1,0 +1,57 @@
+@media (max-width: 1200px) {
+    .nav {
+        @include flex(space-between, center, row);        
+        :nth-child(2) { order: 3; }
+        :nth-child(3) { order: 2; }    
+        .id {
+            margin-left: auto;
+        }    
+    }    
+}
+
+@media (max-width: 500px) {
+    .nav {
+        min-height: 70px;
+        height: 70px;
+        @include flex($jc: center, $ai: center, $fd: column);
+        flex-wrap: wrap;   
+        align-content: center;
+        :nth-child(2) { order: 3; }
+        :nth-child(3) { order: 2; } 
+        padding: 0; 
+        img {
+            display: none;
+        }                     
+        &__topnav {
+            margin-top: 0;
+        }  
+        .deals {
+            display: none;
+            margin-top: 15px;
+        }
+        .id {
+            display: none;
+            margin-left: auto;
+            margin-top: 15px;
+            &__search {                
+                margin-left: 250px;
+                form {
+                    .search:focus {
+                    width: 200px; /* Bar width+1px */
+                    padding: 0 16px 0 0;
+                    border: 2px solid grey;
+                    }
+                }
+            }
+        }    
+    }    
+}
+
+@media (max-width: 500px) {
+    .nav__topnav a.active {
+        background-color: white;
+        color: black;
+        display: block;
+        text-transform: uppercase;
+    }
+}

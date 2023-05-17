@@ -1,0 +1,171 @@
+.nav {
+    background: #FFFFFF;
+    min-height: 100px; 
+    padding: 15px; 
+    z-index: 1000;
+    @include flex(space-between, center, row);
+    img {
+        margin-right: 20px;
+    }
+    &__list {
+        @include flex(space-between, center, row);
+        flex-wrap: wrap;
+        margin-right: 20px;
+        .nav__enumeration {
+            margin-right: 20px;
+            font-weight: 600;
+            a {color: black;}
+        }
+    }
+    .deals {
+        @include flex(center, center, row);
+        cursor: pointer;
+        width: 150px;
+        height: 50px;
+        font-weight: 600;
+        color: #0156FF;
+        letter-spacing: 3px;
+        border-radius: 50px;
+        outline: none;
+        border: 3px solid #0156FF;
+        transition:0.2s;
+        box-shadow:0 7px 0 #aac3f5;
+    }
+    .deals:hover {
+        transform: translateY(5px);
+        box-shadow:0 3px 0 #aac3f5;        
+    }
+    .deals:active {
+        transform:translateY(2px);
+        box-shadow:0 0px 0 #aac3f5;
+    }
+    .id {
+        @include flex($jc: center, $ai: center, $fd: row); 
+        margin-left: 20px;   
+        &__search {
+            position: relative;
+            display: inline-block;
+            margin: 4px 2px;
+            height: 50px;
+            width: 50px;
+            vertical-align: bottom;    
+        }
+        &__cart {
+            margin-right: 15px;
+        }
+        &__personal {
+            width: inherit;
+        }
+    }    
+}
+
+.nav__topnav {
+    overflow: hidden;
+    background-color: none;
+  }  
+  .nav__topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-size: 17px;
+  }  
+  .nav__topnav a:hover {
+    background-color: #ddd;
+    border-radius: 35px;
+    color: black;
+  }  
+  .nav__topnav a.active {
+    background-color: #ddd;
+    border-radius: 35px;
+    color: white;
+    display: none;
+    text-transform: uppercase;
+  }  
+  .nav__topnav .icon {
+    display: none;
+  }  
+  @media screen and (max-width: 1200px) {
+    .nav__topnav a:not(:first-child) {display: none;}
+    .nav__topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }  
+  @media screen and (max-width: 1200px) {
+    .nav__topnav.responsive {position: relative;}
+    .nav__topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav__topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+
+.searchbutton {
+    position: absolute;
+    top: 10px;
+    font-size: 22px;
+    width: 50px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.search:focus + .searchbutton {
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+}
+.mglass {    
+    display: inline-block;
+    pointer-events: none;
+    transform: rotate(-45deg);
+}
+.search {
+	position: absolute;
+	left: 49px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+	background-color: white;
+	outline: none;
+	border: none;
+	padding: 0;
+	width: 0;
+	height: 100%;
+	z-index: 10;
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+}
+.search:focus {
+	width: 270px; /* Bar width+1px */
+	padding: 0 16px 0 0;
+    border: 2px solid grey;
+}
+.expandright {
+	left: auto;
+	right: 49px; /* Button width-1px */
+}
+.expandright:focus {
+	padding: 0 0 0 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .container {
+  padding-top: 102px;
+}

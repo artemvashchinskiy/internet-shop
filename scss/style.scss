@@ -1,0 +1,37 @@
+@import "./media-var"; /*1*/
+@import "./mixins"; /*2*/
+@import "./fonts"; /*3*/
+@import "./common"; /*4*/
+@import "./container";
+@import "./header/header";
+@import "./header/header-media";
+@import "./hero/hero";
+@import "./hero/hero-media";
+@import "./nav/nav";
+@import "./nav/nav-media";
+@import "./new-products/new-products";
+@import "./new-products/new-products-media";
+@import "./zip/zip";
+@import "./zip/zip-media";
+@import "./custome-builds/custome-builds";
+@import "./custome-builds/custome-builds-media";
+@import "./msi-laptops/msi-laptops";
+@import "./msi-laptops/msi-laptops-media";
+@import "./desktops/desktops";
+@import "./desktops/desktops-media";
+@import "./gaming-monitors/gaming-monitors";
+@import "./gaming-monitors/gaming-monitors-media";
+@import "./brands/brands";
+@import "./brands/brands-media";
+@import "./new-products/new-products";
+@import "./new-products/new-products-media";
+@import "./follow-us/follow-us";
+@import "./follow-us/follow-us-media";
+@import "./review/review";
+@import "./review/review-media";
+@import "./services/services";
+@import "./services/services-media";
+@import "./footer/footer";
+@import "./footer/footer-media";
+@import "./catalog1/msi-ps-series-20/msi-ps-series-20";
+@import "./catalog1/msi-ps-series-20/msi-ps-series-20-media";

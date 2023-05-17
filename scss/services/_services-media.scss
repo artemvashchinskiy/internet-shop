@@ -1,0 +1,31 @@
+@media (max-width: 900px) {
+    .services {
+        margin: 0px auto 0px auto;
+        max-width: 1160px;
+        min-height: 300px;
+        @include flex($jc: center, $ai: center, $fd: row);
+        flex-wrap: wrap;
+        .product {
+            margin: 15px;
+            max-width: calc(1160px / 3);
+            border-left: 2px solid transparent;
+            @include flex($jc: center, $ai: center, $fd: column);
+            text-align: center;
+            &__support {
+                margin: 0 auto 25px;
+                width: 65px;
+                height: 65px;
+                background-color: #0156FF;
+                border-radius: 32px;
+                @include flex($jc: center, $ai: center, $fd: row);
+            }
+            h2 {
+                margin-bottom: 25px;
+                font-weight: 700;
+            }
+            p {
+                font-weight: 400;
+            }
+        }
+    } 
+}

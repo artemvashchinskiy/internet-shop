@@ -1,0 +1,39 @@
+
+@media (max-width: $bp2) {
+    .header {
+        background: #020202;
+        min-height: 50px; 
+        padding: 15px;  
+        &__container {
+            @include flex($jc: space-between, $ai: center, $fd: column);
+            flex-wrap: wrap;        
+        }
+    }
+}
+
+@media (max-width: $bp3) {
+    .header {
+        background: #020202;
+        min-height: 50px; 
+        padding: 15px;  
+        &__container {
+            @include flex(space-between, center, column);
+            flex-wrap: wrap;        
+        }
+        .header__contacts {
+            @include flex(center, center, column);
+        }
+    }
+}
+
+@media (max-width: $bp4) {
+    .header {
+        background: #020202;
+        min-height: 50px; 
+        padding: 15px;  
+        &__container {
+            @include flex(space-between, center, column);
+            flex-wrap: wrap;        
+        }
+    }
+}

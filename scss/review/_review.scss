@@ -1,0 +1,71 @@
+.review-block {
+    .review {        
+        margin: 50px auto 0px auto;
+        max-width: 1160px;
+        min-height: 310px;
+        background-color: #F5F7FF;
+        padding: 50px 100px;
+        &__brackets {
+            @include grid($ac: center, $jc: center, $ai: center, $ji: center);
+            grid-template-columns: 15% 80%;
+            .bracket {
+                h1 {
+                font-weight: 400;
+                font-size: 100px;
+                }
+            }     
+            .exposition {
+                width: auto;
+                p {
+                    font-weight: 400;
+                }
+            }
+            .author {
+                width: 100%;
+                @include grid($ac: center, $jc: end, $ai: center, $ji: center); 
+            }
+            :last-child {
+                grid-column-end: -1;
+            }
+        }
+        &__leave-us {
+            margin-top: 10px;         
+            @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+            grid-template: auto / repeat(2, 1fr);  
+            .button {
+                width: 200px;
+                height: 50px;
+                border: 2px solid #0156FF;
+                border-radius: 50px;
+                @include grid($ac: center, $jc: center, $ai: center, $ji: center);
+                a {
+                    padding: 5px;
+                    color: #0156FF;
+                    font-weight: 600;
+                }
+            }
+            .review-list {
+                @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+                grid-template: auto / repeat(4, 1fr);                
+                width: 100%;
+                :last-child {
+                    grid-column-end: -1;
+                }
+                &__list{
+                    @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+                    grid-template: auto / repeat(4, 1fr);
+                    grid-gap: 10px;                    
+                    .review-circle {                    
+                        background-color: #0156FF;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                    }/*
+                    :nth-last-child(-n + 3) {
+                        grid-column-end: -2;
+                    }       */
+                }                
+            }
+        }
+    }    
+}

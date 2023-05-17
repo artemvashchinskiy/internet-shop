@@ -1,0 +1,17 @@
+@import "../../mixins"; /*1*/
+
+.msi-ps-series {
+    .ul-laptops {
+        @include grid($ac: center, $jc: center, $ai: center, $ji: center);
+        grid-template: auto / repeat(5, 1fr);
+        .li-laptops {
+            a {
+                font-weight: 400;
+                color: #000000;
+            }       
+            .li-laptops-last {
+                color: #d32626;
+            }
+        }        
+    }    
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <container class="container header__container">
+            <div class="header__time">
+                <h4>Mon-Thu: <span>9:00 AM - 5:30 PM</span></h2>
+                <img src="./img/icons/Vector11.png" alt="Vector11.png">
+            </div>            
+            <div class="header__contacts">
+                <h4>Visit our showroom in 1234 Street Adress City Address, 1234</h4>
+                <a href=""><u>Contact Us</u></a>
+            </div>            
+            <div class="header__call-us">
+                <h4><span>Call Us: (00) 1234 5678</span></h2>
+                <img src="./img/icons/VectorFB.png" alt="VectorFB.png">
+                <img src="./img/icons/Vector0.png" alt="Vector0.png">
+            </div>
+        </container>
+    </header> 
+    <nav class="nav" id="myHeader">
+        <img src="./img/icons/Vector24.png" alt="Vector24.png">        
+        <div class="nav__topnav" id="myTopnav">
+            <a class="active" href="">menu</a>
+            <a href="">Laptops</a>
+            <a href="">Desktop PCs</a>
+            <a href="">Networking Devices</a>
+            <a href="">Printers & Scanners</a>
+            <a href="">PC Parts</a>
+            <a href="">All Other Products</a>
+            <a href="">Repairs</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "nav__topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "nav__topnav";
+              }
+            }
+        </script>
+        <div class="deals">
+            <h3 class="deals__h3">Our Deals</h3>
+        </div>
+        <div class="id">
+            <div class="id__search">
+                <form action="/search" method="get">
+                    <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                    <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+                </form>
+            </div>
+            <div class="id__cart">
+                <img src="./img/icons/shoppingcart.png" alt="">
+            </div>
+            <div class="id__personal">
+                <img src="./img/icons/face.png" alt="">
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <hero class="hero">
+            <div class="hero__main-img">
+                <img src="./img/catalog1/hero2.png" alt="hero2.png">
+                <div class="left">
+                    <img src="./img/icons/Vector-left.png" alt="Vector-left.png">
+                </div>
+                <div class="right">
+                    <img src="./img/icons/Vector-right.png" alt="Vector-right.png">
+                </div>
+            </div>
+        </hero>
+        <main class="main">
+            <div class="msi-ps-series">
+                <ul class="ul-laptops">
+                    <li class="li-laptops"><a href="">Home</a>&#8250;</li>
+                    <li class="li-laptops"><a href="">Laptops</a>&#8250;</li>
+                    <li class="li-laptops"><a href="">Everyday Use Notebooks</a>&#8250;</li>
+                    <li class="li-laptops"><a href="">MSI Prestige Series</a>&#8250;</li>
+                    <li class="li-laptops"><a class="li-laptops-last" href="">MSI WS Series</a></li>
+                </ul>
+                <h1>MSI PS Series (20)</h1>
+                <div class="content">
+                    <aside class="aside">
+                        <div class="aside__watch-more">
+                            <h4>Watch more...</h4> <!--back-->
+                        </div>
+                        <div class="aside__comparison">
+                            <div class="aside__comparison__filters">
+                                <h3>Filters</h3>
+                                <button class="clear-filter">Clear Filter</button>
+                            </div>
+                            <div class="aside__comparison__price">  
+                                <details>
+                                    <summary><h4>Category</h4></summary>
+                                        <table>
+                                            <tr>
+                                                <td>CUSTOM PCS</td>
+                                                <td>15</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MSI ALL-IN-ONE PCS</td>
+                                                <td>45</td>
+                                            </tr>
+                                            <tr>
+                                                <td>HP/COMPAQ PCS</td>
+                                                <td>1</td>
+                                            </tr>
+                                        </table>
+                                </details>
+                                <details>
+                                    <summary><h4>Price</h4></summary>
+                                        <table>
+                                            <tr>
+                                                <td>$0.00 - $1,000.00</td>
+                                                <td>19</td>
+                                            </tr>
+                                            <tr>
+                                                <td>$1,000.00 - $2,000.00</td>
+                                                <td>21</td>
+                                            </tr>
+                                            <tr>
+                                                <td>$2,000.00 - $3,000.00</td>
+                                                <td>9</td>
+                                            </tr>
+                                            <tr>
+                                                <td>$3,000.00 - $4,000.00</td>
+                                                <td>6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>$4,000.00 - $5,000.00</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>$5,000.00 - $6,000.00</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>$6,000.00 - $7,000.00</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>$7,000.00 And Above</td>
+                                                <td>1</td>
+                                            </tr>
+                                        </table>
+                                </details>
+                                <details>
+                                    <summary><h4>Color</h4></summary>
+                                    <form action="/action_page.php">
+                                        <input type="radio" id="html" name="fav_language" value="HTML">
+                                            <label for="html">HTML</label><br>                                          
+                                        </form>      
+                                        <input type="radio" id="html" name="fav_language" value="HTML">
+                                            <label for="html">HTML</label><br>                                          
+                                        </form>                                    
+                                </details>
+                                <details>
+                                    <summary><h4>Filter Name</h4></summary>
+                                    <Button class="apply-filters">Apply Filters (2)</Button>
+                                  </details>                                  
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="laptops"></div>
+                </div>
+            </div>            
+        </main>
+        <footer class="footer">
+            <div class="main">
+                <div class="sign-up">
+                    <div class="sign-up__text">
+                        <h1>Sign Up To Our Newsletter.</h1>
+                        <p>Be the first to hear about the latest offers.</p>
+                    </div>
+                    <div class="sign-up__subscribe">
+                        <form action="/action_page.php">
+                            <input type="email" class="email" id="email" name="email" placeholder="   Your Email:">
+                        </form>
+                        <button class="button">Subscribe</button>
+                    </div>
+                </div>
+                <div class="information-section">
+                    <div class="information">
+                        <p class="heading">
+                            Information
+                        </p>
+                        <ul class="list">
+                            <li class="list__heading"><a href="">About Us</a></li>
+                            <li class="list__heading"><a href="">About ZIP</a></li>
+                            <li class="list__heading"><a href="">Privacy Policy</a></li>
+                            <li class="list__heading"><a href="">Search</a></li>
+                            <li class="list__heading"><a href="">Terms</a></li>
+                            <li class="list__heading"><a href="">Orders and Returns</a></li>
+                            <li class="list__heading"><a href="">Contact Us</a></li>
+                            <li class="list__heading"><a href="">Advanced Search</a></li>
+                            <li class="list__heading"><a href="">Newsletter Subscription</a></li>
+                        </ul>
+                    </div>
+                    <div class="information">
+                        <p class="heading">
+                            PC Parts
+                        </p>
+                        <ul class="list">
+                            <li class="list__heading"><a href="">CPUS</a></li>
+                            <li class="list__heading"><a href="">Add On Cards</a></li>
+                            <li class="list__heading"><a href="">Hard Drives (Internal)</a></li>
+                            <li class="list__heading"><a href="">Graphic Cards</a></li>
+                            <li class="list__heading"><a href="">Keyboards \ Mice</a></li>
+                            <li class="list__heading"><a href="">Cases \ Power Supplies \ Cooling</a></li>
+                            <li class="list__heading"><a href="">RAM (Memory)</a></li>
+                            <li class="list__heading"><a href="">Software</a></li>
+                            <li class="list__heading"><a href="">Speakers / Headsets</a></li>
+                            <li class="list__heading"><a href="">Motherboards</a></li>
+                        </ul>
+                    </div>
+                    <div class="information">
+                        <p class="heading">
+                            Desctop PCs
+                        </p>
+                        <ul class="list">
+                            <li class="list__heading"><a href="">Custom PCs</a></li>
+                            <li class="list__heading"><a href="">Servers</a></li>
+                            <li class="list__heading"><a href="">MSI All-In-One PCs</a></li>
+                            <li class="list__heading"><a href="">HP/Compaq PCs</a></li>
+                            <li class="list__heading"><a href="">ASUS PCs</a></li>
+                            <li class="list__heading"><a href="">Tecs PCs</a></li>
+                        </ul>
+                    </div>
+                    <div class="information">
+                        <p class="heading">
+                            Laptops
+                        </p>
+                        <ul class="list">
+                            <li class="list__heading"><a href="">Evryday Use Notebooks</a></li>
+                            <li class="list__heading"><a href="">MSI Workstation Series</a></li>
+                            <li class="list__heading"><a href="">MSI Prestige Series</a></li>
+                            <li class="list__heading"><a href="">Tablets and Pads</a></li>
+                            <li class="list__heading"><a href="">Netbooks</a></li>
+                            <li class="list__heading"><a href="">Infinity Gaming Notebooks</a></li>
+                        </ul>
+                    </div>
+                    <div class="information">
+                        <p class="heading">
+                            Address
+                        </p>
+                        <ul class="list">
+                            <li class="list__heading">Address: 1234 Street Adress City Address, 1234</li>
+                            <li class="list__heading">Phones: <a class="contact" href="tel:+002">(00) 2345 6789</a></li>
+                            <li class="list__heading">We are open: Monday-Thursday: 9:00 AM - 5:30 PM</li>
+                            <li class="list__heading">Friday: 9:00 AM - 6:00 PM</li>
+                            <li class="list__heading">Saturday: 11:00 AM - 5:00 PM</li>
+                            <li class="list__heading">E-mail: <a class="contact" href="mailto: abc@example.com">shop@email.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards__fb">
+                        <img src="./img/icons/cards/fb-dark.png" alt="photo">
+                        <img src="./img/icons/cards/fb1-dark.png" alt="photo">
+                    </div>
+                    <div class="cards__cards">
+                        <img src="./img/icons/cards/paypal.png" alt="photo">
+                        <img src="./img/icons/cards/visa.png" alt="photo">
+                        <img src="./img/icons/cards/master-card.png" alt="photo">
+                        <img src="./img/icons/cards/discover.png" alt="photo">
+                        <img src="./img/icons/cards/amex.png" alt="photo">
+                    </div>
+                    <div class="cards__copyright">
+                        <p>Copyright © 2020 Shop Pty. Ltd.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> 
+    <script src="./js/main.js"></script>
+</body>
+</html>

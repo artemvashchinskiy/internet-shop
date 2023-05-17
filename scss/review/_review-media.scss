@@ -1,0 +1,302 @@
+@media (max-width: $bp3) {
+    .review-block {
+        .review {        
+            margin: 50px auto 0px auto;
+            max-width: 1160px;
+            min-height: 310px;
+            background-color: #F5F7FF;
+            padding: 50px 100px;
+            &__brackets {
+                @include grid($ac: center, $jc: center, $ai: center, $ji: center);
+                grid-template-columns: 15% 80%;
+                grid-gap: 1em 1em;
+                .bracket {
+                    h1 {
+                    font-weight: 400;
+                    font-size: 100px;
+                    }
+                }     
+                .exposition {
+                    width: auto;
+                    p {
+                        font-weight: 400;
+                    }
+                }
+                .author {
+                    width: 100%;
+                    @include grid($ac: center, $jc: end, $ai: center, $ji: center); 
+                }
+                :last-child {
+                    grid-column-end: -1;
+                }
+            }
+            &__leave-us {
+                margin-top: 10px;         
+                @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+                grid-template: auto / repeat(2, 1fr);  
+                .button {
+                    width: 200px;
+                    height: 50px;
+                    border: 2px solid #0156FF;
+                    border-radius: 50px;
+                    @include grid($ac: center, $jc: center, $ai: center, $ji: center);
+                    a {
+                        padding: 5px;
+                        color: #0156FF;
+                        font-weight: 600;
+                    }
+                }
+                .review-list {
+                    @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+                    grid-template: auto / repeat(4, 1fr);                
+                    width: 100%;
+                    :last-child {
+                        grid-column-end: -1;
+                    }
+                    &__list{
+                        @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+                        grid-template: auto / repeat(4, 1fr);
+                        grid-gap: 10px;                    
+                        .review-circle {                    
+                            background-color: #0156FF;
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                        }/*
+                        :nth-last-child(-n + 3) {
+                            grid-column-end: -2;
+                        }       */
+                    }                
+                }
+            }
+        }    
+    }
+}
+
+@media (max-width: 650px) {
+    .review-block {
+        .review {        
+            margin: 50px auto 0px auto;
+            max-width: 1160px;
+            min-height: 310px;
+            background-color: #F5F7FF;
+            padding: 50px 100px;
+            &__brackets {
+                @include grid($ac: center, $jc: center, $ai: center, $ji: center);
+                grid-template-columns: 15% 80%;
+                grid-gap: 1em 1em;
+                position: relative;
+                .bracket {
+                    h1 {
+                        position: absolute;
+                        top: -10px;
+                        font-weight: 400;
+                        font-size: 50px;
+                    }
+                }     
+                .exposition {
+                    width: auto;
+                    p {
+                        font-weight: 400;
+                    }
+                }
+                .author {
+                    width: 100%;
+                    @include grid($ac: center, $jc: end, $ai: center, $ji: center); 
+                }
+                :last-child {
+                    grid-column-end: -1;
+                }
+            }
+            &__leave-us {
+                margin-top: 30px;         
+                @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+                grid-template: auto / repeat(2, 1fr);  
+                .button {
+                    width: 200px;
+                    height: 50px;
+                    border: 2px solid #0156FF;
+                    border-radius: 50px;
+                    @include grid($ac: center, $jc: center, $ai: center, $ji: center);
+                    a {
+                        padding: 5px;
+                        color: #0156FF;
+                        font-weight: 600;
+                    }
+                }
+                .review-list {
+                    @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+                    grid-template: auto / repeat(4, 1fr);                
+                    width: 100%;
+                    :last-child {
+                        grid-column-end: -1;
+                    }
+                    &__list{
+                        @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+                        grid-template: auto / repeat(4, 1fr);
+                        grid-gap: 10px;                    
+                        .review-circle {                    
+                            background-color: #0156FF;
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                        }/*
+                        :nth-last-child(-n + 3) {
+                            grid-column-end: -2;
+                        }       */
+                    }                
+                }
+            }
+        }    
+    }
+}
+
+@media (max-width: 525px) {
+    .review-block {
+        .review {        
+            margin: 50px auto 0px auto;
+
+            max-width: 1160px;
+            min-height: 310px;
+            background-color: #F5F7FF;
+            padding: 50px 100px;
+            &__brackets {
+                @include grid($ac: center, $jc: center, $ai: center, $ji: center);
+                grid-template-columns: 100%;
+                row-gap: 3em;
+                .bracket {
+                    h1 {
+                        top: -10px;
+                        font-weight: 400;
+                        font-size: 50px;
+                    }
+                }     
+                .exposition {
+                    width: auto;
+                    p {
+                        font-weight: 400;
+                    }
+                }
+                .author {
+                    width: 100%;
+                    @include grid($ac: center, $jc: end, $ai: center, $ji: center); 
+                }
+                :last-child {
+                    grid-column-end: -1;
+                }
+            }
+            &__leave-us {
+                margin-top: 30px;         
+                @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+                grid-template: auto / repeat(2, 1fr);  
+                .button {
+                    width: 200px;
+                    height: 50px;
+                    border: 2px solid #0156FF;
+                    border-radius: 50px;
+                    @include grid($ac: center, $jc: center, $ai: center, $ji: center);
+                    a {
+                        padding: 5px;
+                        color: #0156FF;
+                        font-weight: 600;
+                    }
+                }
+                .review-list {
+                    @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+                    grid-template: auto / repeat(4, 1fr);                
+                    width: 100%;
+                    :last-child {
+                        grid-column-end: -1;
+                    }
+                    &__list{
+                        @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+                        grid-template: auto / repeat(4, 1fr);
+                        grid-gap: 10px;                    
+                        .review-circle {                    
+                            background-color: #0156FF;
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                        }
+                        :nth-last-child(-n + 4) {
+                            grid-column-end: -2;
+                        }       
+                    }                
+                }
+            }
+        }    
+    }
+}
+
+@media (max-width: 480px) {
+    .review-block {
+        .review {        
+            margin: 50px auto 0px auto;
+            max-width: 1160px;
+            min-height: 310px;
+            background-color: #F5F7FF;
+            padding: 50px 15px;
+            &__brackets {
+                @include grid($ac: center, $jc: center, $ai: center, $ji: center);
+                grid-template-columns: 100%;
+                row-gap: 3em;
+                .bracket {
+                    h1 {
+                        top: -10px;
+                        font-weight: 400;
+                        font-size: 50px;
+                    }
+                }     
+                .exposition {
+                    width: auto;
+                    p {
+                        font-weight: 400;
+                    }
+                }
+                .author {
+                    width: 100%;
+                    @include grid($ac: center, $jc: end, $ai: center, $ji: center); 
+                }
+                :last-child {
+                    grid-column-end: -1;
+                }
+            }
+            &__leave-us {
+                margin-top: 30px;         
+                @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+                grid-template: auto / repeat(1, 1fr);  
+                row-gap: 2em;    
+                .button {
+                    width: 200px;
+                    height: 50px;
+                    border: 2px solid #0156FF;
+                    border-radius: 50px;
+                    @include grid($ac: center, $jc: center, $ai: center, $ji: center);
+                    a {
+                        padding: 5px;
+                        color: #0156FF;
+                        font-weight: 600;
+                    }
+                }
+                .review-list {
+                    @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+                    grid-template: auto / repeat(1, 1fr);                
+                    width: 100%;
+                    &__list{
+                        @include grid($ac: center, $jc: center, $ai: center, $ji: center); 
+                        grid-template: auto / repeat(4, 1fr);                                        
+                        .review-circle {                    
+                            background-color: #0156FF;
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                        }
+                        :nth-last-child(-n + 4) {
+                            grid-column-end: auto;
+                        }      
+                    }                
+                }
+            }
+        }    
+    }
+}

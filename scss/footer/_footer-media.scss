@@ -1,0 +1,407 @@
+@media (max-width: 950px) {
+    .footer {
+        background-color: #020203;
+        .main {        
+            .sign-up {        
+                padding: 15px;    
+                @include flex($jc: center, $ai: center, $fd: row);
+                flex-wrap: wrap;
+                &__text {
+                    h1 {
+                        margin-bottom: 10px;
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                    p {
+                        color: #FFFFFF;
+                        font-weight: 300;
+                    }
+                }
+                &__subscribe {
+                    @include flex($jc: center, $ai: center, $fd: row);
+                    margin-top: 25px;
+                    .email {                        
+                        width: 300px;
+                        height: 50px;
+                        background-color: transparent;
+                    }
+                    .button {
+                        margin-left: 20px;
+                        color: #FFFFFF;
+                        width: 150px;
+                        height: 50px;
+                        background-color: #0156FF;
+                        border-radius: 50px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .information-section {
+                @include grid($ac: center, $jc: center, $ai: start, $ji: center);
+                grid-template: auto / repeat(3, 1fr);
+                :last-child {
+                    grid-column-end: span 2;
+                }
+                border-bottom: 2px solid #ffffff3f;
+                .information {
+                    margin-top: 50px;
+                    padding: 15px;
+                    .heading {
+                        color: #4b4b4b;
+                        font-weight: bolder;
+                    }
+                    .list {
+                        line-height: 25px;
+                        margin-top: 30px;
+                        &__heading {
+                            color: #FFFFFF;
+                            a {
+                                color: #FFFFFF;
+                            }
+                            .contact {
+                                color: #01A4FF;
+                            }
+                        }
+                    }
+                }
+            }
+            .cards {
+                @include flex($jc: space-between, $ai: center, $fd: row);
+                &__fb {
+                    @include flex($jc: center, $ai: center, $fd: row);
+                    img {
+                        margin: 15px;
+                    }
+                    img:last-child {
+                        margin-left: 5px;
+                    }
+                }
+                &__cards {
+                    @include flex($jc: center, $ai: center, $fd: row);
+                    img {
+                        margin: 3px;
+                        width: 35px;
+                        height: auto;
+                    }
+                }
+                &__copyright {
+                    p {
+                        margin: 15px;
+                        font-weight: 500;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .footer {
+        background-color: #020203;
+        .main {        
+            .sign-up {        
+                padding: 15px;    
+                @include flex($jc: center, $ai: center, $fd: row);
+                flex-wrap: wrap;
+                &__text {
+                    h1 {
+                        margin-bottom: 10px;
+                        color: #FFFFFF;
+                        font-weight: 400;
+                        font-size: 1.6rem;
+                    }
+                    p {
+                        color: #FFFFFF;
+                        font-weight: 300;
+                    }
+                }
+                &__subscribe {
+                    @include flex($jc: center, $ai: center, $fd: row);
+                    margin-top: 25px;
+                    .email {                        
+                        width: 300px;
+                        height: 50px;
+                        background-color: transparent;
+                    }
+                    .button {
+                        margin-left: 20px;
+                        color: #FFFFFF;
+                        width: 150px;
+                        height: 50px;
+                        background-color: #0156FF;
+                        border-radius: 50px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .information-section {
+                @include grid($ac: center, $jc: center, $ai: start, $ji: start);
+                grid-template: auto / repeat(2, 1fr);
+                :last-child {
+                    grid-column-end: span 2;
+                }
+                border-bottom: 2px solid #ffffff3f;
+                .information {
+                    margin-top: 50px;
+                    padding: 15px;
+                    .heading {
+                        color: #4b4b4b;
+                        font-weight: bolder;
+                    }
+                    .list {
+                        line-height: 25px;
+                        margin-top: 30px;
+                        &__heading {
+                            color: #FFFFFF;
+                            a {
+                                color: #FFFFFF;
+                            }
+                            .contact {
+                                color: #01A4FF;
+                            }
+                        }
+                    }
+                }
+            }            
+            .cards {
+                @include flex($jc: space-between, $ai: center, $fd: column);
+                &__fb {
+                    @include flex($jc: center, $ai: center, $fd: row);
+                    img {
+                        margin: 15px;
+                    }
+                    img:last-child {
+                        margin-left: 5px;
+                    }
+                }
+                &__cards {
+                    @include flex($jc: center, $ai: center, $fd: row);
+                    img {
+                        margin: 3px;
+                        width: 35px;
+                        height: auto;
+                    }
+                }
+                &__copyright {
+                    p {
+                        margin: 15px;
+                        font-weight: 500;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .footer {
+        background-color: #020203;
+        .main {        
+            .sign-up {        
+                padding: 15px;    
+                @include flex($jc: center, $ai: center, $fd: row);
+                flex-wrap: wrap;
+                &__text {
+                    @include flex($jc: center, $ai: center, $fd: column);
+                    h1 {
+                        margin-bottom: 10px;
+                        color: #FFFFFF;
+                        font-weight: 400;
+                        font-size: 1.6rem;
+                    }
+                    p {
+                        color: #FFFFFF;
+                        font-weight: 300;
+                    }
+                }
+                &__subscribe {
+                    @include flex($jc: center, $ai: center, $fd: column);
+                    flex-wrap: wrap;
+                    margin-top: 25px;
+                    .email {                        
+                        width: 300px;
+                        height: 50px;
+                        background-color: transparent;
+                    }
+                    .button {
+                        margin-top: 25px;
+                        margin-left: 20px;
+                        color: #FFFFFF;
+                        width: 150px;
+                        height: 50px;
+                        background-color: #0156FF;
+                        border-radius: 50px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .information-section {
+                @include grid($ac: center, $jc: flex-start, $ai: start, $ji: start);
+                grid-template: auto / repeat(2, 1fr);    
+                :last-child {
+                    grid-column-end: 2;
+                }                               
+                .information:nth-child(-n + 2) {
+                    margin-top: 50px;
+                }
+                border-bottom: 2px solid #ffffff3f; 
+                .information {
+                    margin-top: 20px;
+                    padding: 15px;
+                    .heading {
+                        color: #4b4b4b;
+                        font-weight: bolder;
+                    }
+                    .list {
+                        line-height: 25px;
+                        margin-top: 30px;
+                        &__heading {
+                            color: #FFFFFF;
+                            a {
+                                color: #FFFFFF;
+                            }
+                            .contact {
+                                color: #01A4FF;
+                            }
+                        }
+                    }
+                }
+            }
+            .cards {
+                @include flex($jc: space-between, $ai: center, $fd: column);
+                &__fb {
+                    @include flex($jc: center, $ai: center, $fd: row);
+                    img {
+                        margin: 15px;
+                    }
+                    img:last-child {
+                        margin-left: 5px;
+                    }
+                }
+                &__cards {
+                    @include flex($jc: center, $ai: center, $fd: row);
+                    img {
+                        margin: 3px;
+                        width: 35px;
+                        height: auto;
+                    }
+                }
+                &__copyright {
+                    p {
+                        margin: 15px;
+                        font-weight: 500;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .footer {
+        background-color: #020203;
+        .main {        
+            .sign-up {        
+                padding: 15px;    
+                @include flex($jc: center, $ai: center, $fd: row);
+                flex-wrap: wrap;
+                &__text {
+                    @include flex($jc: center, $ai: center, $fd: column);
+                    text-align: center;
+                    h1 {
+                        margin-bottom: 10px;
+                        color: #FFFFFF;
+                        font-weight: 400;
+                        font-size: 1.6rem;
+                    }
+                    p {
+                        color: #FFFFFF;
+                        font-weight: 300;
+                    }
+                }
+                &__subscribe {
+                    @include flex($jc: center, $ai: center, $fd: column);
+                    flex-wrap: wrap;
+                    margin-top: 25px;
+                    .email {                        
+                        width: 200px;
+                        height: 50px;
+                        background-color: transparent;
+                    }
+                    .button {
+                        margin-top: 25px;
+                        margin-left: 20px;
+                        color: #FFFFFF;
+                        width: 150px;
+                        height: 50px;
+                        background-color: #0156FF;
+                        border-radius: 50px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .information-section {
+                @include grid($ac: center, $jc: flex-start, $ai: start, $ji: start);
+                grid-template: auto / repeat(1, 1fr); 
+                .information:nth-child(2) {
+                    margin-top: 0px;
+                }                 
+                .information:first-child {
+                    margin-top: 50px;
+                }
+                border-bottom: 2px solid #ffffff3f;
+                .information {
+                    margin-top: 0px;
+                    padding: 15px;
+                    .heading {
+                        color: #4b4b4b;
+                        font-weight: bolder;
+                    }
+                    .list {
+                        line-height: 25px;
+                        margin-top: 15px;
+                        &__heading {
+                            color: #FFFFFF;
+                            a {
+                                color: #FFFFFF;
+                            }
+                            .contact {
+                                color: #01A4FF;
+                            }
+                        }
+                    }
+                }
+            }
+            .cards {
+                @include flex($jc: space-between, $ai: center, $fd: column);
+                &__fb {
+                    @include flex($jc: center, $ai: center, $fd: row);
+                    img {
+                        margin: 15px;
+                    }
+                    img:last-child {
+                        margin-left: 5px;
+                    }
+                }
+                &__cards {
+                    @include flex($jc: center, $ai: center, $fd: row);
+                    img {
+                        margin: 3px;
+                        width: 35px;
+                        height: auto;
+                    }
+                }
+                &__copyright {
+                    p {
+                        margin: 15px;
+                        font-weight: 500;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

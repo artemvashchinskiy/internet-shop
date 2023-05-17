@@ -1,0 +1,113 @@
+@media (max-width: $bp3) {
+    .follow-us {
+        margin-top: 20px;
+        position: relative;
+        overflow: hidden;
+        &__new {
+            @include grid($ac: center, $jc: center, $ai: center, $ji: center);
+            grid-template-columns: 1fr 1fr; 
+            justify-items: center;
+            h2 {
+                color: #000000;
+                font-weight: 600;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .follow-us {
+        margin-top: 20px;
+        position: relative;
+        overflow: hidden;
+        &__new {
+            @include grid($ac: center, $jc: center, $ai: center, $ji: center);
+            grid-template-columns: 1fr; 
+            justify-items: center;
+            h2 {
+            color: #000000;
+            font-weight: 600;
+            text-align: center;
+            }
+            a {
+                margin-top: 10px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .follow-us {
+        &__line {
+            margin-top: 20px;
+            display: grid;
+            justify-items: center;
+            grid-template: auto / repeat(5, 1fr);
+        }        
+    }
+}
+
+@media (max-width: $bp1) {
+    .follow-us {
+        &__line {
+            margin-top: 20px;
+            display: grid;
+            justify-items: center;
+            grid-template: auto / repeat(4, 1fr);
+            .article-2:last-child {
+                grid-column-end: -1;
+            }
+            .article-2 {
+                display: block;        
+            }            
+        }        
+    }
+}
+
+
+@media (max-width: 850px) {
+    .follow-us {
+        &__line {
+            margin-top: 20px;
+            display: grid;
+            justify-items: center;
+            grid-template: auto / repeat(3, 1fr);
+        }        
+        .article-2 {
+            display: none;        
+        }            
+    }
+}
+
+@media (max-width: 650px) {
+    .follow-us {
+        &__line {
+            margin-top: 20px;
+            display: grid;
+            justify-items: center;
+            grid-template: auto / repeat(2, 1fr);
+            .article-2 {
+                display: block;
+            }
+        }        
+    }
+}
+
+@media (max-width: 450px) {
+    .follow-us {
+        &__line {
+            margin-top: 20px;
+            display: grid;
+            justify-items: center;
+            grid-template: auto / repeat(1, 1fr);
+            .article-1:nth-last-child(-n + 7) {
+                display: none;
+            }
+        }        
+    }
+}
+

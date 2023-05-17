@@ -1,0 +1,84 @@
+.follow-us {
+    &__new {
+        @include flex($jc: space-between, $ai: flex-end, $fd: row); 
+        flex-wrap: wrap;
+        h2 {
+        font-weight: 600;
+        }
+        a {
+            font-weight: 400;
+            color: #0156FF;
+            text-decoration: underline;
+        }    
+    }
+    &__line {
+        margin-top: 20px;
+        display: grid;
+        justify-items: center;
+        grid-template: auto / repeat(6, 1fr);
+        .article-1 {    
+            max-width: 235px;     
+            margin: 3px;   
+            .logo { 
+                background-color: #000000;
+                img {
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+            }      
+            .twit {
+                max-width: 235px; 
+                position: relative;
+                overflow: hidden;                
+                padding: 10px 25px;
+                @include flex($jc: center, $ai: center, $fd: row); 
+                background: #000000;
+                p {
+                    font-weight: 400;
+                    padding-bottom: 10px;
+                    color: white;
+                }   
+                .read-more {
+                    height: 100px;
+                    position: absolute;
+                    background-image: linear-gradient(to bottom, transparent, black);
+                    bottom: 0;
+                    left: 0;
+                    width: 100%; 
+                    text-align: center; 
+                    color: red;
+                    @include flex($jc: center, $ai: flex-end, $fd: row); 
+                    a {
+                        color: red;
+                        font-weight: bolder;
+                    }
+                }                   
+            }
+        }
+        .article-2 {    
+            display: none;
+            max-width: 235px;     
+            margin: 3px;
+            .twit {
+                max-width: 235px; 
+                height: 100%;             
+                padding: 10px 25px;
+                @include flex($jc: center, $ai: flex-end, $fd: row); 
+                .read-more {
+                    height: 100px;   
+                    width: 100%; 
+                    padding: 10px;
+                    border-radius: 100px;
+                    background-color: #000000;
+                    text-align: center; 
+                    color: red;
+                    @include flex($jc: center, $ai: center, $fd: row); 
+                    a {
+                        color: red;
+                        font-weight: bolder;
+                    }
+                }                   
+            }
+        }
+    }
+}
